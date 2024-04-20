@@ -25,3 +25,7 @@ Media Queries: Modify the media queries (@media rules) to fine-tune the responsi
 
 Compatibility
 This website is designed to be compatible with modern web browsers. It is responsive and should work well on desktop, tablet, and mobile devices.
+
+
+![Responsivepage](https://github.com/yadavnitish2001/RESPONSIVE_WEBSITE/assets/120257078/24c64cf7-5072-41d3-ba83-f3108e6e3d74)
+![Responsivepage2](https://github.com/yadavnitish2001/RESPONSIVE_WEBSITE/assets/120257078/97dc8783-886e-42f8-91bb-d2227a8dfcbe)
