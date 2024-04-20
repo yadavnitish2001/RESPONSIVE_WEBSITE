@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    margin:10px 50px;
+    background-color: rgba(191, 202, 202, 0.505);
+    font-family:system-ui, sans-serif;
+
+  }
+  .navbar {
+    background-color:	rgb(255, 102, 102);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+    height: 50px;  
+  }
+   
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar li {
+    float: left;
+  }
+ 
+  .navbar a {
+    display: block;
+    color: #000;
+    font-family: 'Alkalami';
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-align: center;
+    padding: 40px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    background-color: #291bc1;
+    color: black;
+    border-radius: 20px;
+  }
+  .menu-icon img {
+    width: 25px;
+  }
+  .container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:600px;
+    background: linear-gradient(to right, #f9faba, #ffc1c1ec);;   
+  }
+  .section1{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+
+  }
+  #content_left{
+    padding-left: 10px;
+    padding-right: 50px;
+    max-width: 50%;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #content_right{
+    flex: 1;
+    max-width:50%;
+    
+  }
+  #content_right img{
+    max-width: 100%;
+    max-height: 100%; /* Set maximum height to 100% of container height */
+    display: block;
+    width: auto;
+    height: 600px;
+   
+  }
+  #content_left h1{
+    font-size: 3rem;
+    padding-bottom: 20px;
+    margin-left: -58px;
+    letter-spacing: 3px;
+  }
+  #content_left p{
+    font-size: 1rem;
+    padding-bottom: 30px;   
+  }
+  .button{
+    width:200px;
+    height: 30px;
+    background-color: rgb(255, 102, 102);
+    border:none ;
+    color:#fff;
+    margin-left: -220px;  
+  }
+  .photo-gallery {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem 2rem;
+    padding: 10px;
+    margin-left: 40px;
+  }
+
+  .photo1 {
+    grid-column: 1; /* Place the first photo in the first column */
+  }
+
+  .photo2 {
+    grid-column: 1; /* Place the second photo in the first column */
+    grid-row: 2; /* Place the second photo in the second row */
+  }
+
+  .photo3 {
+    grid-column: 2; /* Place the third photo in the second column */
+    grid-row: span 2; /* Make the third photo span two rows */
+  }
+
+  .photo3 img {
+    height: 340px;
+    width: 220px;
+    object-fit: cover;
+  }
+   img{
+    height:auto;
+    width: auto;
+    object-fit: cover;
+  }
+  .photo1 img,.photo2 img {
+    height: 160px; /* Set the height of the first two images to 100% */
+    width: 220px;
+    object-fit: cover;
+  }
+  .container2{
+   margin-top: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   position: relative;
+   column-gap:-2rem ;
+   background: linear-gradient(to top left, #ff99ff 0%, #ffff99 100%);
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+   height:600px; 
+  }
+  .lo_click{
+   background-color: rgb(255, 102, 102);
+   position:relative;
+   padding-left: 40px;
+   padding-right: 50px;
+   padding-top: 30px;
+   font-size: 15px;
+   width:400px; 
+   height:240px ; 
+   padding-bottom: 60px;
+   margin-left: 0;
+   margin-right: 150px;
+ }
+  .lo_click h1{
+  padding-bottom: 20px;
+  letter-spacing: 3px;
+  font-size: 40px;
+}
+ .lo_click p{
+  font-size:15px;
+  padding-bottom: 20px;
+} 
+ .lo_click img{
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+ .arrow_{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} 
+  /* Styles for mobile devices */
+  @media screen and (max-width: 768px) {
+    .navbar ul {
+      display:block;
+      display: flex;
+      flex-direction: column;
+      max-height: 300px;
+     
+    }
+    .section1{
+      width:500px;
+    }
+    .navbar{
+      width:500px;
+      height: 340px;
+    }
+    .navbar a{
+      padding:10px;
+      font-size: 1.5rem;
+    }
+    .container1{
+      height:400px;
+      width:500px
+  }
+  #content_left{
+    padding-right: 50px;
+    max-width: 50%;
+  }
+  #content_right{
+    max-width:50%; 
+  }
+  #content_right img{
+    max-width: 100%;
+    max-height: 100%; /* Set maximum height to 100% of container height */
+    display: block;
+    width: auto;
+    height: 400px;
+   
+  }
+  #content_left h1{
+    font-size: 1.5rem;
+    padding-bottom: 0px;
+    padding-left: 60px;
+    letter-spacing: 2px;
+  }
+  #content_left pre{
+    font-size: 8px;
+    font-weight:600;
+    text-align: center;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 20px;
+  }
+  .button{
+    width:80px;
+    height: 3px;
+    font-weight: lighter;
+    font-size: x-small;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: -90px; 
+  }
+  .photo-gallery {
+    width: 50%;
+    display:grid;
+    grid-gap: 1rex 2rex;
+    padding-right: 70px;
+  }
+  .photo3 img {
+    height: 240px;
+    width: 110px;
+    object-fit: cover;
+  }
+ 
+  .photo1 img,.photo2 img {
+    height: 110px; /* Set the height of the first two images to 100% */
+    width: 110px;
+
+  }
+  .container2{
+   height:400px; 
+   width:500px;
+  }
+  .lo_click{
+   padding-left: 20px;
+   padding-right: 10px;
+   padding-top: 10px;
+   width:61%; 
+   height:120px ; 
+   padding-bottom: 60px;
+   margin-left: 0;
+   margin-right: 150px;
+ }
+  .lo_click h1{
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+ .lo_click p{
+  font-size:10px;
+  padding-bottom: 20px;
+} 
+.arrow_ img{
+ width: 25px;
+} 
+  }
+  /* Styles for tablets */
+  @media screen and (min-width: 769px) and (max-width: 1025px) {
+    .navbar {
+      
+      padding-right: 5px; /* Adjusted padding for tablets */   
+  }
+    .navbar  a {
+      padding:10px; /* Adjusted padding for tablets */
+      font-size: 14px;
+    }
+    #content_left {
+      padding-left: 80px ;
+    }
+    #content_left pre{
+      font-size: 11.5px;
+      padding-right: 70px;
+      padding-left: 20px;
+    }
+    #content_left h1{
+      font-size:22px;
+      padding-right: 60px;
+    }
+  
+    .section2 {
+      margin-top: 10px; /* Adjust margin for tablets */
+    }
+    .button{
+      width:110px;
+      margin-top: 50px;
+    }
+    .photo-gallery {
+      width: 50%;
+      display:grid;
+      padding-right: 30px;
+      margin-top: 40px;
+     
+    }
+    .photo3 img {
+      height: 380px;
+      width: 160px;
+      object-fit: cover;
+    }
+   
+    .photo1 img,.photo2 img {
+      height: 180px; /* Set the height of the first two images to 100% */
+      width: 160px;
+  
+    }
+    
+    .lo_click{
+     width:60%; 
+     height:200px ; 
+     margin-right: 150px;
+     margin-left: 50px;
+     margin-bottom: 50px;
+
+   }
+    .lo_click h1{
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+   .lo_click p{
+    font-size:14px;
+  } 
+  }
+
+  /* Styles for desktop */
+  @media screen and (min-width: 1025px)and (max-width:1400px) {  
+    .navbar li{
+     margin-right: 40px;
+    
+    }
+    .navbar{
+      width:auto;
+    }
+    .navbar a{
+      padding:10px;
+      font-size: 1rem;
+    }
+  }
+  
